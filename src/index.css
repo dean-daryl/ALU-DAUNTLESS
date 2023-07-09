@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500&family=Unbounded:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Unbounded", cursive;
+  background-color: black;
+  overflow-x: hidden;
+}
+.text{
+  /* padding: 30px; */
+  height: fit-content;
+  background-image: 
+    radial-gradient(#53B3CB 3%, transparent 3%),
+    radial-gradient(#53B3CB 3%, transparent 3%);
+  background-position: 0px 0px, 24px 24px;
+  background-size: 48px 48px;
+  background-color: black;
+}
