@@ -16,7 +16,7 @@ const Member = ({ name, description, picture }: Props) => {
         <p className="text-2xl">{name}</p>
         <p className="mt-5">{description}</p>
       </div>
-      <img className="w-[400px] h-[400px] " alt={`${picture}`} src={picture} />
+      <img className="w-[400px] h-[400px] object-cover" alt={`${picture}`} src={picture} />
     </li>
   );
 };

@@ -16,7 +16,7 @@ function Blog({ title, cover, description }: Props) {
       <div>
         {/*  COVER IMAGE */}
         <div>
-          <img src={cover} alt="" className=" w-1/1 h-[490px] aspect-square " />
+          <img src={cover} alt="" className=" w-1/1 h-[490px] aspect-square object-cover" />
         </div>
         {/* TITLE */}
         <div>

@@ -1,17 +1,16 @@
 import { motion } from 'framer-motion';
 import { BlogType } from '../../shared/types';
 import Blog from './Blog';
-
 const blogs: Array<BlogType> = [
   {
     title: 'ALUxpress',
-    cover: 'public/challenge1.jpg',
+    cover: '/challenge1.jpg',
     description:
       'Huddle up with the team as they brainstorm solutions together, unlocking uncharted territories of creative thinking.',
   },
   {
     title: 'Hunt for Treasure',
-    cover: 'public/challenge5.JPG',
+    cover: '/challenge5.jpg',
     description:
       'Huddle up with the team as they brainstorm solutions together, unlocking uncharted territories of creative thinking.',
   },

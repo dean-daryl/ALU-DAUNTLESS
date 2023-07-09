@@ -6,28 +6,28 @@ const members: Array<MemberType> = [
   {
     name: 'Ireymika Edun',
     description: 'Team lead and Content Creator',
-    picture: 'public/ireymika.JPG',
+    picture: '/ireymika.jpg',
   },
   {
     name: 'Dean Daryl MURENZI',
     description: 'Tech and Design lead',
-    picture: 'public/dean.JPG',
+    picture: '/dean.jpg',
   },
   {
     name: 'Inema Rita',
     description: 'Translator ',
-    picture: 'public/rita.JPG',
+    picture: '/rita.jpg',
   },
 
   {
     name: 'Nicholas Eke',
     description: 'Content Writer',
-    picture: 'public/nicholas.JPG',
+    picture: '/nicholas.jpg',
   },
   {
     name: 'Benjamin Kagiraneza',
     description: 'Photographer',
-    picture: 'public/ben.JPG',
+    picture: '/ben.jpg',
   },
 ];
 function Members({}: Props) {

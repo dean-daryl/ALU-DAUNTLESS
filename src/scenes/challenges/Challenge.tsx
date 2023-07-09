@@ -6,9 +6,9 @@ type Props = {
 }
 
 function Challenge({name,date,grade}: Props) {
-    const challengeText = 'font-instrument text-[20px] xs:text-[10px]';
+    const challengeText = 'font-instrument text-[20px] xs:text-[15px]';
   return (
-    <div className="flex space-x-[20px] pb-2 my-5 border-b-[0.1px] border-gray-100 xs:space-x-[0px] xs:px-2">
+    <div className="flex space-x-[20px] pb-2 my-5 border-b-[0.1px] border-gray-100 xs:space-x-[0px] xs:px-4">
       {/* DATE */}
       <div>
         <p className={`${challengeText} text-red-20 w-[200px] xs:w-[100px]`}>{date}</p>

@@ -22,7 +22,7 @@ function App({}: Props) {
     <div>
       {/* NAVBAR */}
       <div className=" bg-primary-100 flex">
-        <p className="mx-auto py-[70px] text-[140px] ">DAUNTLESS</p>
+        <p className="mx-auto py-[70px] text-[140px] xs:text-[40px]">DAUNTLESS</p>
       </div>
 
       {/* JOURNEY */}
