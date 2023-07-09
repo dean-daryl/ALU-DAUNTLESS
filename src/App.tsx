@@ -1,5 +1,4 @@
 import Blogs from './scenes/blog';
-import Blog from './scenes/blog';
 import Challenges from './scenes/challenges';
 import Members from './scenes/members';
 import { motion } from 'framer-motion';

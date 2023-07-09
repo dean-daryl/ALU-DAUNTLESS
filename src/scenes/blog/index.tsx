@@ -18,16 +18,7 @@ const blogs: Array<BlogType> = [
 ];
 
 type Props = {};
-const childVariant = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1 },
-};
-const container = {
-  hidden: {},
-  visible: {
-    transition: {duration:5.3, ease:"ease-in-out",staggerChildren: 0.2 },
-  },
-};
+
 function Blogs({}: Props) {
   return (
     <div className="bg-black sm:px-10 py-10">
@@ -37,7 +28,7 @@ function Blogs({}: Props) {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1.5, delay:0.2}}
+        transition={{ duration: 1.5, delay: 0.2 }}
         variants={{
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },

@@ -1,4 +1,3 @@
-import React from 'react';
 import Member from './member';
 import { MemberType } from '../../shared/types';
 

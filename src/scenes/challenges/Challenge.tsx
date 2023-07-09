@@ -1,9 +1,8 @@
-import React from 'react'
 
 type Props = {
     name:string;
     date:string;
-    grade:number;
+    grade:string;
 }
 
 function Challenge({name,date,grade}: Props) {

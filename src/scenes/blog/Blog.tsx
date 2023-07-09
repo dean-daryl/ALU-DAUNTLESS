@@ -13,7 +13,6 @@ function Blog({ title, cover, description }: Props) {
   return (
     <motion.div variants={childVariant} className=" ">
       {/* BLOG CARD */}
-      
       <div>
         {/*  COVER IMAGE */}
         <div>
