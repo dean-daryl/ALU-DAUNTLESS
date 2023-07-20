@@ -1,7 +1,9 @@
 export interface BlogType {
+  id:number;
   title: string;
   cover: string;
   description: string;
+  content: string;
 }
 export interface ChallengeType {
   date: string;

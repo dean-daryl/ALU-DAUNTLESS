@@ -22,7 +22,9 @@ function App({}: Props) {
     <div>
       {/* NAVBAR */}
       <div className=" bg-primary-100 flex">
-        <p className="mx-auto py-[70px] text-[140px] xs:text-[40px]">DAUNTLESS</p>
+        <p className="mx-auto py-[70px] text-[140px] xs:text-[40px]">
+          DAUNTLESS
+        </p>
       </div>
 
       {/* JOURNEY */}
@@ -68,7 +70,7 @@ function App({}: Props) {
       </div>
       {/* CONCLUSION */}
       <motion.div
-        className="text"
+        className="text flex xs:block "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -78,10 +80,10 @@ function App({}: Props) {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="text-white  ml-10 px-10 text-[40px] xs:ml-0 xs:text-[30px]">
-          Are You Ready for Adventure?
-        </p>
         <div className=" py-10 px-10 ml-10 w-fit-content xs:ml-5 xs:px-2 ">
+          <p className="text-white py-5 text-[40px] xs:ml-0 xs:text-[30px]">
+            Are You Ready for Adventure?
+          </p>
           <p className="text-blue-20 font-instrument w-[500px] xs:w-[300px] ">
             Dive headfirst into THE DAUNTLESS’ epic journey and discover the
             mind-blowing challenges and unforgettable experiences these five
@@ -104,6 +106,14 @@ function App({}: Props) {
             tight, for the adventure of a lifetime awaits!
           </p>
         </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/nfs6wAL1zL0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          className="w-[500px] h-[300px]  relative top-[150px] xs:w-screen xs:px-5 xs:top-0"
+        ></iframe>
       </motion.div>
       {/* FOOTER */}
       <div className="my-5">
