@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App.tsx';
@@ -19,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <BrowserRouter>
     <Routes>
       {routes.map((route) => (
-        <Route key={route.path} path={route.path} element={route.element}>
+        <Route key={route.path} path={route.path} >
           {route.children.map((child) => (
             <Route key={child.path} path={child.path} element={child.element} />
           ))}

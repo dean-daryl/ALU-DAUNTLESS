@@ -37,12 +37,17 @@ const blogs: Array<BlogType> = [
 ];
 
 const SingleBlog = () => {
-  const { id } = useParams();
-  const idAsNumber = parseInt(id, 10);
+const { id } = useParams();
+let idAsNumber=0
+if (id !== undefined) {
+   idAsNumber = parseInt(id, 10);
+} else {
+console.log("Invalid id ");
+}
   const formatContentAsParagraphs = (content: string) => {
     return content
       .split('\n\n')
-      .map((paragraph, index) => <p className="font-instrument px-[100px] py-[5px]" key={index}>{paragraph}</p>);
+      .map((paragraph, index) => <p className="font-instrument text-[25px] px-[150px] py-[10px] xs:px-4 xs:text-[15px]" key={index}>{paragraph}</p>);
   };
   return (
     <div>
@@ -61,17 +66,17 @@ const SingleBlog = () => {
                 <img
                   src={blog.cover}
                   alt="cover image"
-                  className=" w-[1000px] h-[500px] aspect-square object-cover"
+                  className=" w-[1000px] h-[500px] aspect-square object-cover xs:w-[90%] xs:h-[50%] xs:object-contain "
                 />
               </div>
               {/* TITLE */}
               <div className="">
-                <h1 className="text-blue-20 text-[45px] flex justify-center">
+                <h1 className="text-blue-20 text-[45px] flex justify-center xs:text-[30px]">
                   {blog.title}
                 </h1>
               </div>
 
-              <div className="text-secondary-400 px-10 py-8">
+              <div className="text-secondary-400 px-10 py-8 xs:px-1 xs:py-1">
                 {formatContentAsParagraphs(blog.content)}
               </div>
             </div>

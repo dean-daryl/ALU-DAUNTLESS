@@ -7,28 +7,38 @@ const challenges: Array<ChallengeType> = [
   {
     name: 'Challenge 1: ALUxpress',
     date: 'Jun. 2, 2023',
-    grade: "1050/1500",
+    grade: '1050/1500',
   },
 
   {
     name: 'Challenge 2: Introduction',
     date: 'Jun. 14, 2023',
-    grade: "1000/1000",
+    grade: '1000/1000',
   },
   {
     name: 'Challenge 3: Discover Africa',
     date: 'Jun. 21, 2023',
-    grade: "1500/1500",
+    grade: '1500/1500',
   },
   {
     name: 'Challenge 4: HELP-LAB',
     date: 'Jun. 28, 2023',
-    grade: "?/2000",
+    grade: '2000/2000',
   },
   {
     name: 'Challenge 5: Hunt for Treasure',
     date: 'Jul. 4, 2023',
-    grade: "?/2000",
+    grade: '2000/2000',
+  },
+  {
+    name: 'Challenge 6:Launch Your Mission V2',
+    date: 'Jul. 26, 2023',
+    grade: '2000/2000',
+  },
+  {
+    name: 'Challenge 7: Digital Print',
+    date: 'Jul. 28, 2023',
+    grade: '?/5000',
   },
 ];
 function Challenges({}: Props) {

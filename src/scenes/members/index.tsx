@@ -15,7 +15,7 @@ const members: Array<MemberType> = [
   },
   {
     name: 'Inema Rita',
-    description: 'Translator ',
+    description: 'Translator and Team Lead Assistant ',
     picture: '/rita.jpg',
   },
 
