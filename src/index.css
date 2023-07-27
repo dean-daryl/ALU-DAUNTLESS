@@ -24,3 +24,12 @@ body,
   background-size: 48px 48px;
   background-color: black;
 }
+.grayscale-image {
+  filter: grayscale(0%); /* Initially, the image is black and white */
+  transition: filter 0.3s ease-in-out; /* Animation duration and timing function */
+}
+
+.grayscale-image:hover {
+  filter: grayscale(100%); /* On hover, the image becomes colored again */
+  /* You can also add other animations or transitions here if needed */
+}

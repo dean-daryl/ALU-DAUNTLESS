@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import Blogs from './scenes/blog';
 import Challenges from './scenes/challenges';
 import Members from './scenes/members';
@@ -17,16 +18,51 @@ function App({}: Props) {
       '_blank',
     );
   };
+  const handleClick = (content: string) => {
+    const section = document.getElementById(`${content}`);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const description = 'text-secondary-400 font-instrument text-[20px] ';
   return (
     <div>
       {/* NAVBAR */}
-      <div className=" bg-primary-100 flex">
-        <p className="mx-auto py-[70px] text-[140px] xs:text-[40px]">
-          DAUNTLESS
-        </p>
+      <div className="bg-primary-100  flex flex-col">
+        <div>
+          <ul className="flex justify-center font-instrument pt-[80px] gap-[440px] xs:gap-[50px] sm:gap-[200px]">
+            <li
+              className="cursor-pointer"
+              onClick={() => {
+                handleClick('blogs');
+              }}
+            >
+              Blogs
+            </li>
+            <li
+              className="cursor-pointer"
+              onClick={() => {
+                handleClick('challenges');
+              }}
+            >
+              Challenges
+            </li>
+            <li
+              className="cursor-pointer"
+              onClick={() => {
+                handleClick('our_team');
+              }}
+            >
+              Our Team
+            </li>
+          </ul>
+        </div>
+        <div className="flex">
+          <p className="mx-auto pb-[70px] text-[140px] xs:text-[40px] sm:text-[90px]">
+            DAUNTLESS
+          </p>
+        </div>
       </div>
-
       {/* JOURNEY */}
 
       {/* INTRO */}
@@ -57,20 +93,20 @@ function App({}: Props) {
         </div>
       </div>
       {/* BLOGS */}
-      <div>
+      <div id="blogs">
         <Blogs />
       </div>
       {/* CHALLENGES */}
-      <div>
+      <div id="challenges">
         <Challenges />
       </div>
       {/* MEET THE TEAM */}
-      <div>
+      <div id="our_team">
         <Members />
       </div>
       {/* CONCLUSION */}
       <motion.div
-        className="text flex xs:block "
+        className="text flex xs:block sm:block "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -85,25 +121,26 @@ function App({}: Props) {
             Are You Ready for Adventure?
           </p>
           <p className="text-blue-20 font-instrument w-[500px] xs:w-[300px] ">
-            Dive headfirst into THE DAUNTLESS’ epic journey and discover the
-            mind-blowing challenges and unforgettable experiences these five
-            students have faced. From decoding enigmatic puzzles to engineering
+            Are you ready to embark on an awe-inspiring journey like no other?
+            Welcome to THE DAUNTLESS’ E-Lab odyssey, where five remarkable
+            students have faced mind-blowing challenges and unforgettable
+            experiences. From deciphering enigmatic puzzles to engineering
             awe-inspiring creations, these E-Lab crusaders know no bounds in
             achieving their goals.
           </p>
           <p className="text-blue-20 font-instrument w-[500px]  mt-8 xs:w-[300px]">
-            Just like the legendary explorers of the past, THE DAUNTLESS
-            embraces the spirit of adventure, daring to push their limits and
-            surpass expectations. Each student brings their unique skills and
-            insights to tackle the challenges, creating a melting pot of
-            cutting-edge strategies and solutions.
+            Like legendary past explorers, THE DAUNTLESS embraces the spirit of
+            adventure, daring to push their limits and surpass expectations.
+            Each student brings unique skills and insights to tackle the
+            challenges, creating a melting pot of cutting-edge strategies and
+            solutions.
           </p>
           <p className="text-blue-20 font-instrument w-[500px] mt-5 xs:w-[300px]">
             <br />
-            So join us, fellow adventurists, as we embark on THE DAUNTLESS’
-            E-Lab Journey. We guarantee that their marvelous exploits will
-            astound, inspire, and above all, entertain you to no end. Hold on
-            tight, for the adventure of a lifetime awaits!
+            Join us, fellow adventurists, as we immerse ourselves in THE
+            DAUNTLESS’ E-Lab Journey. Get amazed, inspired, and thoroughly
+            entertained by their marvellous exploits. Hold on tight, for the
+            adventure of a lifetime awaits!
           </p>
         </div>
         <iframe
@@ -112,7 +149,7 @@ function App({}: Props) {
           src="https://www.youtube.com/embed/nfs6wAL1zL0"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          className="w-[500px] h-[300px]  relative top-[150px] xs:w-screen xs:px-5 xs:top-0"
+          className="w-[500px] h-[300px]  relative top-[150px] xs:w-screen xs:px-5 xs:top-0 sm:px-8 sm:top-0 sm:ml-12 "
         ></iframe>
       </motion.div>
       {/* FOOTER */}

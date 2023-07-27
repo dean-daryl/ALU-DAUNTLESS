@@ -25,7 +25,7 @@ function Blog({ id,title, cover, description }: Props) {
             <img
               src={cover}
               alt=""
-              className=" w-1/1 h-[490px] aspect-square object-cover"
+              className=" w-1/1 h-[490px] aspect-square object-cover grayscale-image"
             />
           </div>
           {/* TITLE */}
