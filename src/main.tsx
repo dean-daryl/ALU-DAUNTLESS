@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import 'core-js/stable';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App.tsx';
 import './index.css';
