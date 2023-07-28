@@ -128,14 +128,14 @@ function App({}: Props) {
             awe-inspiring creations, these E-Lab crusaders know no bounds in
             achieving their goals.
           </p>
-          <p className="text-blue-20 font-instrument w-[500px]  mt-8 xs:w-[300px]">
+          <p className="text-blue-20 font-instrument w-[500px]  mt-5 xs:w-[300px]">
             Like legendary past explorers, THE DAUNTLESS embraces the spirit of
             adventure, daring to push their limits and surpass expectations.
             Each student brings unique skills and insights to tackle the
             challenges, creating a melting pot of cutting-edge strategies and
             solutions.
           </p>
-          <p className="text-blue-20 font-instrument w-[500px] mt-5 xs:w-[300px]">
+          <p className="text-blue-20 font-instrument w-[500px]  xs:w-[300px]">
             <br />
             Join us, fellow adventurists, as we immerse ourselves in THE
             DAUNTLESS’ E-Lab Journey. Get amazed, inspired, and thoroughly
